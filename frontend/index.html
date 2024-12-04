@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-Based Food Recommendation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <a class="aliz-ko-lado" href="index2.html">Check Dine Out</a>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1 class="h1-heading">FORECAST FEAST</h1>
+        </header>
+
+        <!-- Weather Information Display -->
+        <section id="weather">
+            <p>Loading weather data...</p>
+        </section>
+
+        <!-- Food Recommendation Display -->
+        <div class="container-for-food">
+            <section id="recommendation">
+                <h3>Recommended Food:</h3>
+                <span id="recommendation-text">Loading...</span>
+                <div class="image-section">
+                    <img src="#" alt="food-image" class="dish-image hidden" width="400" height="300">
+                </div>
+            </section>
+        </div>
+
+        <!-- Nutrition Information Section -->
+        <button id="showNutritionBtn" onclick="toggleNutrition()">Show Nutrition Info</button>
+        <div id="nutritionSection" style="display: none;">
+            <h3>Nutrition Facts</h3>
+            <p class="nutrition-item"><span>Calories:</span> <span id="calories">-</span> kcal</p>
+            <p class="nutrition-item"><span>Carbs:</span> <span id="carbs">-</span> g</p>
+            <p class="nutrition-item"><span>Fat:</span> <span id="fat">-</span> g</p>
+            <p class="nutrition-item"><span>Protein:</span> <span id="protein">-</span> g</p>
+        </div>
+
+        <!-- Form for Selecting Health Goals and Dietary Restrictions -->
+        <form id="healthForm">
+            <section class="form-section">
+                <h3>Health Goals</h3>
+                <label><input type="checkbox" name="healthGoals" value="Increase Hydration"> Increase Hydration</label><br>
+                <label><input type="checkbox" name="healthGoals" value="Boost Immunity"> Boost Immunity</label><br>
+                <label><input type="checkbox" name="healthGoals" value="High Protein"> High Protein</label><br>
+                <label><input type="checkbox" name="healthGoals" value="Weight Loss"> Weight Loss</label><br>
+                <label><input type="checkbox" name="healthGoals" value="Muscle Gain"> Muscle Gain</label><br>
+            </section>
+
+            <section class="form-section">
+                <h3>Dietary Restrictions</h3>
+                <label><input type="checkbox" name="dietaryRestrictions" value="None"> None</label><br>
+                <label><input type="checkbox" name="dietaryRestrictions" value="Vegan"> Vegan</label><br>
+                <label><input type="checkbox" name="dietaryRestrictions" value="Nut-Free"> Nut-Free</label><br>
+                <label><input type="checkbox" name="dietaryRestrictions" value="Sugar-Free"> Sugar-Free</label><br>
+                <label><input type="checkbox" name="dietaryRestrictions" value="Gluten-Free"> Gluten-Free</label><br>
+                <label><input type="checkbox" name="dietaryRestrictions" value="Keto-Friendly"> Keto-Friendly</label><br>
+                <label><input type="checkbox" name="dietaryRestrictions" value="Dairy-Free"> Dairy-Free</label><br>
+                <label><input type="checkbox" name="dietaryRestrictions" value="Low Sodium"> Low Sodium</label><br>
+                <label><input type="checkbox" name="dietaryRestrictions" value="Low Fat"> Low Fat</label><br>
+                <label><input type="checkbox" name="dietaryRestrictions" value="Paleo-Friendly"> Paleo-Friendly</label><br>
+                <label><input type="checkbox" name="dietaryRestrictions" value="Vegetarian"> Vegetarian</label><br>
+            </section>
+
+            <button type="button" onclick="fetchWeatherData()" class="btn" id="btn-recommendation">Get Recommendation</button>
+        </form>
+
+        <!-- Additional Images -->
+        <div class="right-side-images">
+           
+            <img src="img/ai-generated-8701959_1280.jpg" alt="" class="img-1">
+            <img src="img/flower-5495384_1280.jpg" alt="" class="img-2">
+            <img src="img/asparagus-2169305_1280.jpg" alt="" class="img-1">
+            <img src="img/food-5072245_1280.jpg" alt="" class="img-2">
+            <img src="img/cocktail-8076619_1280.jpg" alt="" class="img-1">
+            <img src="img/juice-7316896_1280.jpg" alt="" class="img-2">
+            <img src="img/drink-84533_1280.jpg" alt="" class="img-1">
+            <img src="img/orange-juice-67556_1280.jpg" alt="" class="img-2">
+            <img src="img/pancakes-2291908_1280.jpg" alt="" class="img-2">
+            <img src="img/spring-roll-6760871.jpg" alt="" class="img-2">
+            <img src="img/strawberries-7391738_1280.jpg" alt="" class="img-2">
+        </div>
+
+        <!-- Recipe Details Section -->
+        <div id="recipeSection" style="display: none;">
+            <button id="toggleRecipeBtn" onclick="toggleRecipe()">Show Recipe</button>
+            <div id="recipeDetails" style="display: none;">
+                <h3>Recipe Instructions</h3>
+                <p id="recipeDescription">Loading recipe details...</p>
+                <div id="recipeUrl"></div>
+                <div id="recipeVideoUrl"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,542 @@
+/* styles.css */
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
+
+body {
+  font-family: "Bree Serif", serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #ffdee9, #b5fffc);
+  color: #333;
+  background-image: url("img/clouds-2552968.jpg");
+  /* background-size: 1530px 1075px; */
+  font-size: 25px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff34;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.container-1 {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff34;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.h1-heading {
+  font-size: 2.8em;
+  color: plum;
+  margin-bottom: 20px;
+  background-color: whitesmoke;
+  text-align: center;
+  margin: 0rem 8rem 0rem 8rem;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #4a90e2;
+  text-align: center;
+}
+
+#weather {
+  background: none;
+  background-image: url("img/architecture-1845689.jpg");
+  background-size: 900px 260px;
+}
+
+#recommendation {
+  position: relative;
+  /* margin-right: 19rem; */
+  right: 0.6rem;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 10px;
+  background: #fff5e1;
+  border-radius: 8px;
+}
+#weather {
+  margin: 20px 0;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 8px;
+}
+#recommendation-text {
+  color: #ff6f61;
+}
+
+.form-section {
+  margin: 20px 0;
+  padding: 15px;
+  background: #f0f8ff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+label {
+  font-size: 1em;
+  color: #495057;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+  accent-color: #ff6f61;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  font-size: 1.1em;
+  font-weight: bold;
+  background: linear-gradient(135deg, #ff6f61, #ff9478);
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-transform: uppercase;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Recipe Details Section */
+#recipeDetails {
+  margin-top: 20px;
+  text-align: justify;
+  padding: 15px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#toggleRecipeBtn {
+  padding: 12px 25px;
+  font-size: 1.1em;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s;
+  text-transform: uppercase;
+}
+
+#toggleRecipeBtn:hover {
+  background-color: #45a049;
+  transform: translateY(-3px);
+}
+
+#recipeContent {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: none; /* Hidden by default, toggled visibility */
+}
+
+#recipeContent h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #ff6f61;
+  text-align: center;
+}
+
+#recipeList {
+  padding-left: 20px;
+  font-size: 1.1em;
+  list-style-position: inside;
+  line-height: 1.6;
+}
+
+#recipeList li {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+#recipeUrl,
+#recipeVideo {
+  margin-top: 15px;
+  font-size: 1.1em;
+  color: #4caf50;
+  text-align: center;
+}
+
+#recipeUrl a,
+#recipeVideo a {
+  color: #ff6f61;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+#recipeUrl a:hover,
+#recipeVideo a:hover {
+  color: #45a049;
+  text-decoration: underline;
+}
+
+/* General Link Styling */
+a {
+  color: #ff6f61;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  button {
+    font-size: 0.95em;
+    padding: 10px 20px;
+  }
+
+  #toggleRecipeBtn {
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+
+  #recipeContent {
+    padding: 15px;
+  }
+
+  #recipeList li {
+    font-size: 1em;
+  }
+
+  #recipeUrl,
+  #recipeVideo {
+    font-size: 1em;
+  }
+}
+
+.hidden {
+  display: none;
+  width: 0%;
+}
+
+#recommendation {
+  width: 100%;
+}
+
+/* Container to hold the images in the background */
+.right-side-images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  z-index: -1; /* Send images to the background */
+}
+
+/* Style for each image in the right-side-images container */
+.right-side-images img {
+  width: 300px; /* Increased width of images */
+  height: 300px; /* Increased height of images */
+  object-fit: cover; /* Ensure images cover the area without distortion */
+  opacity: 0.9;
+  margin: 10px;
+  border-radius: 50%; /* This creates circular shapes */
+  animation: float 6s ease-in-out infinite; /* Floating animation */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Different shapes (circle, rectangle, ellipse) */
+.right-side-images img:nth-child(odd) {
+  border-radius: 50%; /* Circle */
+}
+
+.right-side-images img:nth-child(even) {
+  border-radius: 25%; /* Slightly rounded rectangles */
+}
+
+.right-side-images img:nth-child(3n) {
+  border-radius: 15%; /* Slightly oval/rounded */
+}
+
+.right-side-images img:hover {
+  opacity: 1; /* Full opacity on hover */
+  transform: scale(1.1); /* Enlarge image on hover */
+}
+
+/* Animation for images moving from left to right (for odd rows) */
+@keyframes move-left-to-right {
+  0% {
+    transform: translateX(-100%); /* Start off-screen to the left */
+  }
+  50% {
+    transform: translateX(100%); /* Move off-screen to the right */
+  }
+  100% {
+    transform: translateX(-100%); /* Move back to start */
+  }
+}
+
+/* Animation for images moving from right to left (for even rows) */
+@keyframes move-right-to-left {
+  0% {
+    transform: translateX(100%); /* Start off-screen to the right */
+  }
+  50% {
+    transform: translateX(-100%); /* Move off-screen to the left */
+  }
+  100% {
+    transform: translateX(100%); /* Move back to start */
+  }
+}
+
+/* Apply move-left-to-right animation to images in odd rows (1st, 3rd, 5th, etc.) */
+.right-side-images img:nth-child(odd) {
+  animation: move-left-to-right 12s ease-in-out infinite,
+    float 6s ease-in-out infinite;
+}
+
+/* Apply move-right-to-left animation to images in even rows (2nd, 4th, 6th, etc.) */
+.right-side-images img:nth-child(even) {
+  animation: move-right-to-left 12s ease-in-out infinite,
+    float 6s ease-in-out infinite;
+}
+
+/* Animation for floating effect */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Adjustments for responsiveness */
+@media (max-width: 768px) {
+  .right-side-images img {
+    width: 250px; /* Slightly smaller on medium screens */
+    height: 250px;
+  }
+
+  .right-side-images {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .right-side-images img {
+    width: 200px; /* Smaller size on small screens */
+    height: 200px;
+  }
+}
+
+.google-embedded-map {
+  position: relative;
+}
+
+.map-section-heading {
+  margin-bottom: 1rem;
+}
+
+.main-heading {
+  width: 100%;
+  text-align: center;
+  background-color: plum;
+  margin: 0;
+}
+
+select {
+  height: 122px;
+}
+
+.dish-image {
+  border-radius: 14px;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+/* Page title */
+.title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Restaurant list styling */
+#restaurantList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Individual restaurant card */
+.restaurant-card {
+  width: 300px;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+/* Hover effect for restaurant cards */
+.restaurant-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Restaurant name styling */
+.restaurant-card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Restaurant details (rating, price, services, etc.) */
+.restaurant-card p {
+  color: #555;
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+/* Link to view on Google Maps */
+.restaurant-card a {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the Google Maps link */
+.restaurant-card a:hover {
+  background-color: #0056b3;
+}
+
+.aliz-ko-lado {
+    background-color: plum;
+    color: black;
+    padding: 1rem;
+    text-align: center;
+    top: 0.5rem;
+    position: sticky;
+    left: 82rem;
+    border-radius: 12px;
+    border : 1px solid black;
+    z-index: 120;
+  }
+
+  .trans{
+    background-color: rgba(255, 255, 255, 0.631);
+    justify-content: center;
+  }
+
+  /* Nutrition Section Styling */
+#nutritionSection {
+    display: none; /* Initially hidden */
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  #nutritionSection h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #ff6f61;
+  }
+  
+  .nutrition-item {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  .nutrition-item span {
+    font-weight: bold;
+    color: #4caf50;
+  }
+  
+  #nutritionSection p {
+    margin: 8px 0;
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  /* Button to Show Nutrition */
+  #showNutritionBtn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    font-weight: bold;
+    background: linear-gradient(135deg, #4caf50, #8bc34a);
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-transform: uppercase;
+  }
+  
+  #showNutritionBtn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  ul{
+    text-align: left;
+  }
+
+  
+.dine-out-heading,.dine-out-heading-near-you{
+    border: 1px solid black;
+}
+
+.dine-out-heading-near-you{
+    background-color: rgb(190, 188, 188);
+}
