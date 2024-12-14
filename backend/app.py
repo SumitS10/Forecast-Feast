@@ -18,7 +18,7 @@ with open("dietary_restriction_encoder.pkl", "rb") as file:
     mlb_dietary_restriction = pickle.load(file)
 
 # Spoonacular API key for fetching recipes
-SPOONACULAR_API_KEY = '31df176a62904b498132fa5a7507cd7f'
+SPOONACULAR_API_KEY = 'YOur api key'
 
 # Create the Flask app
 app = Flask(__name__)
