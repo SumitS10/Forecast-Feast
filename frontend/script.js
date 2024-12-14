@@ -3,7 +3,7 @@ const dietaryRestrictionsCheckboxes = document.querySelectorAll(
   );
   const noneCheckbox = document.querySelector('input[value="None"]');
   
-  const apiKey = "dcc8afdf52dde4823f259788f3ef0e36";
+  const apiKey = "your api key";
   
   function fetchWeatherData() {
     if (navigator.geolocation) {
